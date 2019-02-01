@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>les objet en JavaScript</title>
+  </head>
+  <body>
+  <h1>Les objets en JavaScript</h1>
+  </body>
+  <script>
+     var text = 'Japrends le javaSCRIPT';
+
+    var textMin = text.toLowerCase();  //Mettre en manuscule la chaine
+    var textMaj = text.toUpperCase(); //Mettre en majuscule la chaine
+
+    alert(text + textMin + textMaj);
+
+
+    var pos0 = texte.charAt(0); //Première caractère de la chaine (J)
+    var pos4 = texte.charAt(4); //Cinquième caractère de la chaine (e)
+
+    alert(pos4);
+
+
+    var premiere = texte.indexOf('e');  //Premier (e) de la chaine se trouve à la place 4 (Le première caractère occupe la place 0)
+    var derniere = texte.lastIndexOf('e');  //dernier (e) de la chaine se trouve à la place 10; (indexOf ne prends pas en compt les lestres majuscules)
+    //Si la caractère cherché n'a pas trouvé ça va s'afficher (-1)
+    alert(premiere);
+    alert(derniere);
+
+
+    var premiere = texte.indexOf('e'); //Premier (e) de la chaine
+
+    alert(texte.replace(premiere, 'espace')); ???????
+
+
+    var texteTronque = texte.slice(0, 9); //Afficher les 9 premiers caractères, (0) est la position de débuter d'extraction et (9)est la position de fin d'exstraction
+    alert(texteTronque);
+
+
+    var texte = '     Japrendss le javaSCRIPT       ';
+
+    var texteNettoye = texte.trim();  //Supprimer les espaces avant et après de la chaine
+    alert(texteNettoye);
+
+    function nomPropre(mot) {
+      var m=mot.charAt(0).toUpperCase() + mot.substring(1).toLowerCase();
+      console.log(m);
+      return m;
+    }
+
+
+      var tailleString = function (texte) {
+        var pos4 = texte.charAt(4);
+      return 'pos4';
+    }
+  </script>
+</html>
